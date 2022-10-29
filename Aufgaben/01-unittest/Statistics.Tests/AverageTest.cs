@@ -17,5 +17,17 @@ namespace Statistics.Tests
 
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void TestMeanOfFiveNumbers()
+        {
+            List<int> numbers = new List<int> { 1, 2, 10, 20, 103 };
+            double expected = 27.2;
+            Average average = new Average();
+
+            double actual = average.Mean(numbers);
+
+            Assert.Equal(expected, actual);
+        }
     }
 }
