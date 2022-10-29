@@ -6,7 +6,7 @@ namespace Calculator.Tests
     public class CalculatorTest
     {
         [Fact]
-        public void TestAddThreeToTwoPIsFive()
+        public void TestAddThreeToTwoIsFive()
         {
             // Arrange
             int a = 2;
@@ -22,12 +22,12 @@ namespace Calculator.Tests
         }
 
         [Fact]
-        public void TestSubtractFourFromSixIsTwo()
+        public void TestSubstractFourFromNineIsFive()
         {
             // Given
-            int a = 6;
+            int a = 9;
             int b = 4;
-            int expected = 2;
+            int expected = 5;
             Calculator calculator = new Calculator();
 
             // When
