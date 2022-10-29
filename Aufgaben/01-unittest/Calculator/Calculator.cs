@@ -21,7 +21,7 @@ namespace Calculator
 
         public int Divide(int divident, int divisor)
         {
-            return divident * divisor;
+            return divident / divisor;
         }
     }
 }
