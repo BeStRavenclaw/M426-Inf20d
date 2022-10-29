@@ -18,5 +18,10 @@ namespace Calculator
         {
             return factorA * factorB;
         }
+
+        public int Divide(int divident, int divisor)
+        {
+            return divident * divisor;
+        }
     }
 }
