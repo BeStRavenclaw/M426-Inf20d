@@ -36,5 +36,18 @@ namespace Calculator.Tests
             // Then
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void TestMultiplyTwoWhithThreeIsSix()
+        {
+            int a = 2;
+            int b = 3;
+            int expected = 6;
+            Calculator calculator = new Calculator();
+
+            int actual = calculator.Multiply(a, b);
+
+            Assert.Equal(expected, actual);
+        }
     }
 }
