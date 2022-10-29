@@ -22,7 +22,7 @@ namespace Calculator
         public int Divide(int divident, int divisor)
         {
             if (divisor == 0)
-                throw new ArgumentException('You can not divide by Zero!');
+                throw new ArgumentException("You can not divide by Zero!");
 
             return divident / divisor;
         }
