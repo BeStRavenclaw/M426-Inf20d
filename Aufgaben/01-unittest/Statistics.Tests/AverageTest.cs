@@ -33,7 +33,7 @@ namespace Statistics.Tests
         [Fact]
         public void TestMeanOfNoNumbers()
         {
-            List<int> numbers = new List<int> {};
+            List<int> numbers = new List<int> { };
             Average average = new Average();
 
             Assert.Throws<ArgumentException>(() => average.Mean(numbers));
@@ -42,11 +42,11 @@ namespace Statistics.Tests
         [Fact]
         public void TestMedianForOddNumberOfElements()
         {
-            List<int> numbers = new List<int> { 2, 5, 3, 9, 10 };
+            List<int> numbers = new List<int> { 2, 3, 5, 9, 10 };
             double expected = 5;
             Average average = new Average();
 
-            double actual = average.Mean(numbers);
+            double actual = average.Median(numbers);
 
             Assert.Equal(expected, actual);
         }
@@ -54,11 +54,11 @@ namespace Statistics.Tests
         [Fact]
         public void TestMedianForEvenNumberOfElements()
         {
-            List<int> numbers = new List<int> { 2, 5, 3, 9 };
+            List<int> numbers = new List<int> { 2, 3, 5, 9 };
             double expected = 4;
             Average average = new Average();
 
-            double actual = average.Mean(numbers);
+            double actual = average.Median(numbers);
 
             Assert.Equal(expected, actual);
         }
@@ -69,7 +69,7 @@ namespace Statistics.Tests
             List<int> numbers = new List<int> { };
             Average average = new Average();
 
-            Assert.Throws<ArgumentException>(() => average.Mean(numbers));
+            Assert.Throws<ArgumentException>(() => average.Median(numbers));
         }
     }
 }

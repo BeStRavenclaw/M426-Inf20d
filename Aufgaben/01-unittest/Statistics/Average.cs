@@ -22,5 +22,21 @@ namespace Statistics
             mean = (double)sum / numbers.Count;
             return mean;
         }
+
+        public double Median(List<int> numbers)
+        {
+            if (numbers.Count == 0)
+                throw new ArgumentException("There are no numbers for the Median!");
+
+            if (numbers.Count % 2 == 0)
+            {
+                List<int> meanList = new List<int> { numbers[(numbers.Count) / 2 - 1], numbers[(numbers.Count) / 2] };
+                return Mean(meanList);
+            }
+            else
+            {
+                return numbers[(numbers.Count - 1) / 2];
+            }
+        }
     }
 }
