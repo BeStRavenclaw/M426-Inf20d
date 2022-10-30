@@ -28,6 +28,8 @@ namespace Statistics
             if (numbers.Count == 0)
                 throw new ArgumentException("There are no numbers for the Median!");
 
+            numbers.Sort();
+
             if (numbers.Count % 2 == 0)
             {
                 List<int> meanList = new List<int> { numbers[(numbers.Count) / 2 - 1], numbers[(numbers.Count) / 2] };
