@@ -4,14 +4,19 @@
     {
         public string Determine(int input)
         {
+            string output = "";
+
             if (input % 3 == 0)
-                return "Foo";
+                output += "Foo";
 
             if (input % 5 == 0)
-                return "Bar";
+                output += "Bar";
 
             if (input % 7 == 0)
-                return "Qix";
+                output += "Qix";
+
+            if (output != "")
+                return output;
 
             return input.ToString();
         }

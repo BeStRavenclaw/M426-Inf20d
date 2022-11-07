@@ -30,5 +30,19 @@ namespace FooBarQix.Tests
 
             Assert.Equal(expectedOutput, output);
         }
+
+        [Theory]
+        [InlineData(15,"FooBar")]
+        [InlineData(21,"FooQix")]
+        [InlineData(35,"BarQix")]
+        [InlineData(105,"FooBarQix")]
+        public void Determine_ModMultible357_FooBarQixCombinations(int input, string expectedOutput)
+        {
+            FooBarQixDeterminer determiner = new();
+
+            string output = determiner.Determine(input);
+
+            Assert.Equal(expectedOutput, output);
+        }
     }
 }
