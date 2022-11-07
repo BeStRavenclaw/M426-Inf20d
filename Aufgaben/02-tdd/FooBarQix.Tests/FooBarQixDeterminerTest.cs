@@ -4,15 +4,31 @@ namespace FooBarQix.Tests
 {
     public class FooBarQixDeterminerTest
     {
-        [Fact]
-        public void Determine_NotMod357_ExitSameNumberAsString()
+        [Theory]
+        [InlineData(1)]
+        [InlineData(2)]
+        [InlineData(4)]
+        public void Determine_NotMod357_SameNumberAsString(int input)
         {
-            int input = 1;
             FooBarQixDeterminer determiner = new();
 
             string output = determiner.Determine(input);
 
             Assert.Equal(input.ToString(), output);
+        }
+
+        [Theory]
+        [InlineData(3,"Foo")]
+        [InlineData(5,"Bar")]
+        [InlineData(7,"Qix")]
+        [InlineData(6,"Foo")]
+        public void Determine_Mod357_FooBarOrQix(int input, string expectedOutput)
+        {
+            FooBarQixDeterminer determiner = new();
+
+            string output = determiner.Determine(input);
+
+            Assert.Equal(expectedOutput, output);
         }
     }
 }
