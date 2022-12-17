@@ -1,6 +1,24 @@
+using Xunit;
+
 namespace Refactoring.Tests;
 
 public class GradingTest 
 {
-    // TODO
+    [Theory]
+
+    [InlineData(1, 'A')]
+    [InlineData(2, 'B')]
+    [InlineData(3, 'C')]
+    [InlineData(4, 'D')]
+    [InlineData(5, 'E')]
+    [InlineData(6, 'F')]
+
+    public void GetLetterGrade_GradeFrom6To1_ReturnsFToA(int numGrade, char charGrade)
+    {
+        // Act
+        char actual = Grading.GetLetterGrade(numGrade);
+
+        // Assert
+        Assert.Equal(charGrade, actual);
+    }
 }
