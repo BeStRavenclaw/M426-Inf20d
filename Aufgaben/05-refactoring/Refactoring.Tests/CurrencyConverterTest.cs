@@ -25,14 +25,12 @@ public class CurrencyConverterTest
     }
 
     [Fact]
-    public void ConvertTo_ForeignCurrencyDontExists_ReturnsExeption()
+    public void Constructor_ForeignCurrencyDontExists_ReturnsExeption()
     {
         // Assert
-        double chfValue = 0;
         string foreignCurrency = "BEST";
-        CurrencyConverter currencyConverter = new CurrencyConverter(foreignCurrency);
 
         // Act & Assert
-        Assert.Throws<ArgumentException>(() => currencyConverter.ConvertTo(chfValue));
+        Assert.Throws<ArgumentException>(() => new CurrencyConverter(foreignCurrency));
     }
 }
