@@ -4,14 +4,21 @@ public class Fibonacci
 {
     public static int Fib(int n)
     {
+        int last = 1;
+        int secondLast = 1;
+        int result = 0;
+
         if (n < 0)
         {
             throw new ArgumentException("Fibonacci undefined for negative numbers");
         }
-        if (n == 0 || n == 1)
+
+        for (int i = 1; i < n; i++)
         {
-            return n;
+            result += secondLast;
+            secondLast = last;
+            last = result;
         }
-        return Fib(n - 2) + Fib(n - 1);
+        return result;
     }
 }
