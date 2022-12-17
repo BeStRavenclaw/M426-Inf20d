@@ -13,6 +13,11 @@ public class Fibonacci
             throw new ArgumentException("Fibonacci undefined for negative numbers");
         }
 
+        if (n == 0 || n == 1)
+        {
+            return n;
+        }
+
         for (int i = 1; i < n; i++)
         {
             result += secondLast;
