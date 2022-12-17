@@ -1,3 +1,4 @@
+using System;
 using Xunit;
 
 namespace Refactoring.Tests;
@@ -20,5 +21,15 @@ public class GradingTest
 
         // Assert
         Assert.Equal(charGrade, actual);
+    }
+
+    [Fact]
+    public void GetLetterGrade_GradeNotReal_ThrowsException()
+    {
+        // Assert
+        int numGrade = 7;
+
+        // Act & Assert
+        Assert.Throws<ArgumentException>(() => Grading.GetLetterGrade(numGrade));
     }
 }
