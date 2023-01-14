@@ -11,10 +11,19 @@ namespace Payroll
     {
         private Employable employable;
 
+        public AccountHolderAdapter(Employable employable)
+        {
+            this.employable = employable;
+        }
+
         public string GetAccountDetails()
         {
             return employable.GetNote("AccountDetails");
         }
 
+        public override string ToString()
+        {
+            return employable.GetFullName();
+        }
     }
 }

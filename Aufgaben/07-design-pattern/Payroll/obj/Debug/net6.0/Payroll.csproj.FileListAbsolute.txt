@@ -1,0 +1,15 @@
+C:\Users\Ben_Stadelmann\Desktop\School\M426-inf20d\Aufgaben\07-design-pattern\Payroll\bin\Debug\net6.0\Payroll.exe
+C:\Users\Ben_Stadelmann\Desktop\School\M426-inf20d\Aufgaben\07-design-pattern\Payroll\bin\Debug\net6.0\Payroll.deps.json
+C:\Users\Ben_Stadelmann\Desktop\School\M426-inf20d\Aufgaben\07-design-pattern\Payroll\bin\Debug\net6.0\Payroll.runtimeconfig.json
+C:\Users\Ben_Stadelmann\Desktop\School\M426-inf20d\Aufgaben\07-design-pattern\Payroll\bin\Debug\net6.0\Payroll.dll
+C:\Users\Ben_Stadelmann\Desktop\School\M426-inf20d\Aufgaben\07-design-pattern\Payroll\bin\Debug\net6.0\Payroll.pdb
+C:\Users\Ben_Stadelmann\Desktop\School\M426-inf20d\Aufgaben\07-design-pattern\Payroll\obj\Debug\net6.0\Payroll.csproj.AssemblyReference.cache
+C:\Users\Ben_Stadelmann\Desktop\School\M426-inf20d\Aufgaben\07-design-pattern\Payroll\obj\Debug\net6.0\Payroll.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ben_Stadelmann\Desktop\School\M426-inf20d\Aufgaben\07-design-pattern\Payroll\obj\Debug\net6.0\Payroll.AssemblyInfoInputs.cache
+C:\Users\Ben_Stadelmann\Desktop\School\M426-inf20d\Aufgaben\07-design-pattern\Payroll\obj\Debug\net6.0\Payroll.AssemblyInfo.cs
+C:\Users\Ben_Stadelmann\Desktop\School\M426-inf20d\Aufgaben\07-design-pattern\Payroll\obj\Debug\net6.0\Payroll.csproj.CoreCompileInputs.cache
+C:\Users\Ben_Stadelmann\Desktop\School\M426-inf20d\Aufgaben\07-design-pattern\Payroll\obj\Debug\net6.0\Payroll.dll
+C:\Users\Ben_Stadelmann\Desktop\School\M426-inf20d\Aufgaben\07-design-pattern\Payroll\obj\Debug\net6.0\refint\Payroll.dll
+C:\Users\Ben_Stadelmann\Desktop\School\M426-inf20d\Aufgaben\07-design-pattern\Payroll\obj\Debug\net6.0\Payroll.pdb
+C:\Users\Ben_Stadelmann\Desktop\School\M426-inf20d\Aufgaben\07-design-pattern\Payroll\obj\Debug\net6.0\Payroll.genruntimeconfig.cache
+C:\Users\Ben_Stadelmann\Desktop\School\M426-inf20d\Aufgaben\07-design-pattern\Payroll\obj\Debug\net6.0\ref\Payroll.dll
