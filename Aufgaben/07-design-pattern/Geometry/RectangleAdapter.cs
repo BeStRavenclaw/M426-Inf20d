@@ -1,4 +1,5 @@
 using Geometry.ThirdParty;
+using System;
 
 namespace Geometry
 {
@@ -19,6 +20,11 @@ namespace Geometry
         public int GetHeight()
         {
             return square.GetSide();
+        }
+
+        public static double GetWidthHeightRatio(IRectangular rectangular)
+        {
+            return rectangular.GetHeight() / Convert.ToDouble(rectangular.GetWidth());
         }
     }
 }
